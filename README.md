@@ -254,13 +254,13 @@ Download datasets and put datasets folder inside root folder. Dataset folder str
 
 ## Run below scripts
 ```bash
-python scripts/build_customer_db.py
+python -m scripts.build_customer_db
 ```
 ```bash
-python scripts/build_medical_db.py 
+python -m scripts.build_medical_db
 ```
 ```bash
-python scripts/build_arxiv_db.py
+python -m scripts.build_arxiv_db
 ```
 ## Run App
 ```bash
