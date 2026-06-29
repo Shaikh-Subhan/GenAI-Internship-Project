@@ -238,6 +238,7 @@ Then add your actual API keys in .env.
 ```bash
 pip install -r requirements.txt
 ```
+It takes few time
 
 ## 📥 Dataset Download & Setup
 
@@ -247,7 +248,7 @@ Google Drive Dataset Link
 ```bash
 https://drive.google.com/drive/folders/1DFHgWsJM7RnDLLcS-ojKHe52CtrSnBXA?usp=sharing
 ```
-Download datasets and put inside main folder
+Download datasets and put datasets folder inside root folder. Dataset folder structure should be detasets/...
 
 ## 📜Scripts
 
