@@ -3,7 +3,7 @@ from langchain_core.documents import Document
 from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
-CSV_PATH = "datasets/custom_docs/dataset.csv"
+CSV_PATH = "datasets/customer-service/dataset.csv"
 CHROMA_PATH = "vector_store"
 
 embedding_model = HuggingFaceEmbeddings(
