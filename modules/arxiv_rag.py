@@ -8,7 +8,7 @@ VECTOR_DB_PATH = "vectorstores/arxiv_db"
 
 # Better embedding model for research paper retrieval
 embedding_model = HuggingFaceEmbeddings(
-    model_name="BAAI/bge-base-en-v1.5"
+    model_name="sentence-transformers/all-MiniLM-L6-v2"
 )
 
 
@@ -16,7 +16,7 @@ def load_arxiv_documents():
     documents = []
 
     with open(ARXIV_FILE, "r", encoding="utf-8") as f:
-        for line in f:
+        for i, line in enumerate(f, 1):
             try:
                 paper = json.loads(line)
 
@@ -39,7 +39,8 @@ Abstract:
                         metadata={"title": title}
                     )
                 )
-
+                if i % 100 == 0:
+                    print(f"Loaded {i} papers...")
             except Exception as e:
                 print("Error reading paper:", e)
 
@@ -47,13 +48,15 @@ Abstract:
 
 
 def create_arxiv_vector_db():
+    print("Loading papers...")
     docs = load_arxiv_documents()
-
+    print(f"Loaded {len(docs)} papers.")
     vector_db = FAISS.from_documents(
         docs,
         embedding_model
     )
-
+    print("Saving FAISS database...")
+    
     vector_db.save_local(VECTOR_DB_PATH)
     print(f"Saved {len(docs)} papers.")
 
