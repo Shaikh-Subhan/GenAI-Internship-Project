@@ -253,6 +253,7 @@ Download datasets and put datasets folder inside root folder. Dataset folder str
 ## 📜Scripts
 
 ## Run below scripts
+this may takes few time
 ```bash
 python -m scripts.build_customer_db
 ```
