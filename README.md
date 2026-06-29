@@ -223,7 +223,7 @@ Dataset links are provided in submission.
 Create a .env file in the root directory and run below command.
 
 ```bash
-cp .env.example .env
+copy .env.example .env
 ```
 Then add your actual API keys in .env.
 
