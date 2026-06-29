@@ -1,0 +1,56 @@
+# Python
+
+**pycache**/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Virtual Environment
+
+venv/
+env/
+.venv/
+
+# Environment Variables
+
+.env
+
+# Datasets (large files)
+
+datasets/
+
+# Vector Databases
+
+vector_store/
+vectorstores/
+
+# Jupyter / Notebook
+
+.ipynb_checkpoints/
+
+# Streamlit
+
+.streamlit/
+
+# IDE Files
+
+.vscode/
+.idea/
+
+# OS Files
+
+.DS_Store
+Thumbs.db
+
+# Temporary / Cache
+
+temp/
+tmp/
+cache/
+*.tmp
+
+# Large Media / Optional
+
+*.zip
+*.rar
