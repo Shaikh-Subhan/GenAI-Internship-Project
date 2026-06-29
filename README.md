@@ -276,6 +276,22 @@ Testing files are available in:
 tests/
 ```
 
+```bash
+python -m tests.test_arxiv_chat
+```
+```bash
+python -m tests.test_arxiv_retrieval
+```
+```bash
+python -m tests.test_medical_retrieval
+```
+```bash
+python -m tests.test_multilingual
+```
+```bash
+python -m tests.test_sentiment
+```
+
 # 🧠 Chat Interface Usage
 
 Once the app opens, you can interact with the AI assistant in multiple ways:
