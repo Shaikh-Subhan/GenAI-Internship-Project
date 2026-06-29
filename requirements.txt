@@ -1,26 +1,26 @@
-streamlit==1.46.1
-python-dotenv==1.1.1
-google-genai==1.25.0
+streamlit
+python-dotenv
+google-genai
 
-langchain==0.3.26
-langchain-core==0.3.68
-langchain-community==0.3.27
-langchain-huggingface==0.3.0
+langchain
+langchain-core
+langchain-community
+langchain-huggingface
 
-sentence-transformers==5.0.0
-transformers==4.53.2
+sentence-transformers
+transformers
 torch
 
-faiss-cpu==1.11.0
-chromadb==1.0.15
+faiss-cpu
+chromadb
 
-Pillow==11.3.0
-opencv-python==4.12.0.88
+Pillow
+opencv-python
 
-langdetect==1.0.9
-deep-translator==1.11.4
+langdetect
+deep-translator
 
-pypdf==5.8.0
-tqdm==4.67.1
-numpy==2.3.1
-pandas==2.3.1
+pypdf
+tqdm
+numpy
+pandas
