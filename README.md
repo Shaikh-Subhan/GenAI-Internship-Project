@@ -218,6 +218,12 @@ Dataset links are provided in submission.
 
 # ⚙ Setup
 
+Clone this repository to your local machine using:
+
+```bash
+  git clone https://github.com/Shaikh-Subhan/GenAI-Internship-Project
+```
+
 ## 🔐 Environment Setup
 
 Create a .env file in the root directory and run below command.
